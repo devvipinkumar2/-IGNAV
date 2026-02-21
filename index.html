@@ -98,14 +98,14 @@ display:block;
 
 /* Hero */
 .hero{
-height:100vh;
+min-height:100vh;
 display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
 position:relative;
 color:#fff;
-overflow:hidden;
+padding:0 20px;
 background:url('Assets/bg.jpeg') no-repeat center center/cover;
 }
 
@@ -151,7 +151,6 @@ text-shadow:0 4px 25px rgba(0,0,0,0.6);
 }
 
 .hero p{
-font-size:1.2rem;
 margin-bottom:25px;
 color:#f0f0f0;
 }
@@ -159,12 +158,31 @@ color:#f0f0f0;
 .btn{
 padding:14px 35px;
 border-radius:50px;
-background:#ffffff;
-color:#333;
+background:#ee82eeb5;
+color:white;
 text-decoration:none;
 font-weight:600;
 transition:0.3s ease;
 box-shadow:0 8px 25px rgba(0,0,0,0.2);
+}
+
+@media(max-width:480px){
+.hero{
+padding:0 15px;
+}
+
+.hero h1{
+margin-top:35%;
+font-size:130%;
+}
+
+.hero p{
+margin-bottom:-2%;
+
+}
+.hero .btn{
+    padding: 5px 8px;
+}
 }
 
 .btn:hover{
@@ -514,7 +532,6 @@ height:250px;
 <section class="hero" id="home">
 <div>
 <h1>Indira Gandhi Niwasi Apang Vidhyalay.</h1>
-<p>At IGNAV Madlapur, we nurture the potential of physically impaired children through structured learning, personal development, and a supportive educational environment.</p>
 <a href="#about" class="btn">Learn More</a>
 <a href="#contact" class="btn">Get in Touch</a>
 </div>
